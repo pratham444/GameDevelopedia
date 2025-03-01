@@ -147,7 +147,7 @@ document.addEventListener('DOMContentLoaded', function() {
     ctaButtons.forEach(button => {
         button.addEventListener('click', function(e) {
             e.preventDefault();
-            window.location.href = 'https://xyz.com';
+            window.location.href = 'https://superprofile.bio/vp/67c26fd0a514640013679e65';
         });
     });
     
