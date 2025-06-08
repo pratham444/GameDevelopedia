@@ -61,7 +61,10 @@ export function Navigation() {
                 <span className="absolute -bottom-1 left-0 w-0 h-0.5 bg-gradient-to-r from-neon-violet to-cyber-cyan group-hover:w-full transition-all duration-300" />
               </motion.a>
             ))}
-            <Button className="bg-gradient-to-r from-neon-violet to-cyber-cyan hover:from-neon-violet/80 hover:to-cyber-cyan/80 text-white font-semibold">
+            <Button
+              className="bg-gradient-to-r from-neon-violet to-cyber-cyan hover:from-neon-violet/80 hover:to-cyber-cyan/80 text-white font-semibold"
+              onClick={() => document.getElementById("internships")?.scrollIntoView({ behavior: "smooth" })}
+            >
               Get Started
             </Button>
           </div>
@@ -97,7 +100,13 @@ export function Navigation() {
                 {item.name}
               </a>
             ))}
-            <Button className="w-full mt-4 bg-gradient-to-r from-neon-violet to-cyber-cyan text-white">
+            <Button
+              className="w-full mt-4 bg-gradient-to-r from-neon-violet to-cyber-cyan text-white"
+              onClick={() => {
+                setIsOpen(false)
+                document.getElementById("internships")?.scrollIntoView({ behavior: "smooth" })
+              }}
+            >
               Get Started
             </Button>
           </div>
