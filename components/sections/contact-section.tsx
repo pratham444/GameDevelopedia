@@ -81,7 +81,7 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: contactInfo?.email || "gamedevlopedia@gmail.com",
+      value: "gamedevlopedia@gmail.com",
       description: "Send us an email anytime",
     },
     {
