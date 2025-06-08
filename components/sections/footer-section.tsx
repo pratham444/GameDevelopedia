@@ -21,12 +21,12 @@ export function FooterSection() {
   ]
 
   const services = [
-    { name: "Game Development", href: "#" },
-    { name: "Mobile Apps", href: "#" },
-    { name: "Consulting", href: "#" },
-    { name: "Training", href: "#" },
-    { name: "Code Review", href: "#" },
-    { name: "Technical Writing", href: "#" },
+    { name: "Game Development", href: "#contact" },
+    { name: "Mobile Apps", href: "#contact" },
+    { name: "Consulting", href: "#contact" },
+    { name: "Training", href: "#contact" },
+    { name: "Code Review", href: "#contact" },
+    { name: "Technical Writing", href: "#contact" },
   ]
 
   return (
@@ -116,15 +116,15 @@ export function FooterSection() {
             <div className="space-y-3">
               <div className="flex items-center text-gray-400">
                 <Mail className="h-4 w-4 mr-2 text-neon-violet" />
-                <span className="text-sm">hello@gamedevelopedia.com</span>
+                <span className="text-sm">gamedevelopedia@gmail.com</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <Phone className="h-4 w-4 mr-2 text-cyber-cyan" />
-                <span className="text-sm">+1 (555) 123-4567</span>
+                <span className="text-sm">+91 9766414494</span>
               </div>
               <div className="flex items-center text-gray-400">
                 <MapPin className="h-4 w-4 mr-2 text-neon-green" />
-                <span className="text-sm">San Francisco, CA</span>
+                <span className="text-sm">Pune, Maharashtra</span>
               </div>
             </div>
           </motion.div>
@@ -139,7 +139,7 @@ export function FooterSection() {
           viewport={{ once: true }}
         >
           <p className="text-gray-400 text-sm mb-4 md:mb-0">
-            © 2024 GameDevelopedia. All rights reserved. Built with passion for game development.
+            © 2025 GameDevelopedia. All rights reserved. Built with passion for game development.
           </p>
           <div className="flex space-x-6 text-sm">
             <a href="#" className="text-gray-400 hover:text-white transition-colors duration-300">
