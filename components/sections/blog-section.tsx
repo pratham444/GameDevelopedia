@@ -27,6 +27,12 @@ export function BlogSection() {
     fetchBlogPosts()
   }, [])
 
+  const handleBlogClick = (post: BlogPost) => {
+    if (post.url) {
+      window.open(post.url, "_blank")
+    }
+  }
+
   if (loading) {
     return (
       <section id="blog" className="py-20 px-4 bg-gradient-to-b from-deep-black to-gray-950">
@@ -84,6 +90,8 @@ export function BlogSection() {
               transition={{ duration: 0.6, delay: index * 0.1 }}
               viewport={{ once: true }}
               whileHover={{ y: -10 }}
+              className="cursor-pointer"
+              onClick={() => handleBlogClick(post)}
             >
               <Card className="bg-gray-900/50 border-gray-800 hover:border-neon-violet/50 transition-all duration-300 overflow-hidden group h-full">
                 <div className="relative overflow-hidden">
@@ -116,6 +124,10 @@ export function BlogSection() {
                       size="sm"
                       variant="ghost"
                       className="text-cyber-cyan hover:text-white hover:bg-cyber-cyan/20 group/btn"
+                      onClick={(e) => {
+                        e.stopPropagation()
+                        handleBlogClick(post)
+                      }}
                     >
                       Read More
                       <ArrowRight className="h-4 w-4 ml-1 group-hover/btn:translate-x-1 transition-transform" />
@@ -133,21 +145,7 @@ export function BlogSection() {
           </motion.div>
         )}
 
-        <motion.div
-          className="text-center mt-12"
-          initial={{ opacity: 0, y: 30 }}
-          whileInView={{ opacity: 1, y: 0 }}
-          transition={{ duration: 0.8 }}
-          viewport={{ once: true }}
-        >
-          <Button
-            size="lg"
-            className="bg-gradient-to-r from-neon-violet to-cyber-cyan hover:from-neon-violet/80 hover:to-cyber-cyan/80 text-white font-semibold"
-          >
-            View All Posts
-            <ArrowRight className="ml-2 h-5 w-5" />
-          </Button>
-        </motion.div>
+        {/* Removed "View All Posts" button */}
       </div>
     </section>
   )

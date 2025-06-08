@@ -2,7 +2,7 @@
 
 import { useState, useEffect } from "react"
 import { motion } from "framer-motion"
-import { ExternalLink, Download, Star } from "lucide-react"
+import { Download, Star } from "lucide-react"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { Button } from "@/components/ui/button"
 import { Badge } from "@/components/ui/badge"
@@ -141,9 +141,6 @@ export function GamesSection() {
                     >
                       <Download className="h-4 w-4 mr-2" />
                       Download
-                    </Button>
-                    <Button size="sm" variant="outline" className="border-gray-600 text-gray-300 hover:bg-gray-800">
-                      <ExternalLink className="h-4 w-4" />
                     </Button>
                   </div>
                 </CardContent>

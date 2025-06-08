@@ -53,6 +53,10 @@ export function InternshipSection() {
     "Availability of at least 20 hours/week",
   ]
 
+  const handleApplyNow = () => {
+    document.getElementById("contact")?.scrollIntoView({ behavior: "smooth" })
+  }
+
   return (
     <section id="internships" className="py-20 px-4 bg-gradient-to-b from-gray-950 to-deep-black">
       <div className="max-w-7xl mx-auto">
@@ -201,16 +205,11 @@ export function InternshipSection() {
                 <Button
                   size="lg"
                   className="bg-gradient-to-r from-neon-violet to-cyber-cyan hover:from-neon-violet/80 hover:to-cyber-cyan/80 text-white font-semibold"
+                  onClick={handleApplyNow}
                 >
                   Apply Now
                 </Button>
-                <Button
-                  size="lg"
-                  variant="outline"
-                  className="border-cyber-cyan text-cyber-cyan hover:bg-cyber-cyan hover:text-deep-black"
-                >
-                  Learn More
-                </Button>
+                {/* Removed "Learn More" button */}
               </div>
 
               <p className="text-sm text-gray-400 mt-4">
