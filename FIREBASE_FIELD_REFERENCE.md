@@ -54,6 +54,7 @@ socials: {
 | `author` | string | Author name | "Your Name" |
 | `datePublished` | string | ISO date string | "2024-06-08T12:00:00.000Z" |
 | `tags` | array | Array of string tags | ["Unity", "2D", "Tutorial"] |
+| `url` | string | External URL for blog post | "https://yourblog.com/unity-tutorial" |
 
 ## 📞 CONTACT COLLECTION
 
