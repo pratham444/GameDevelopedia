@@ -33,6 +33,7 @@ export interface BlogPost {
   thumbnailURL: string
   content: string
   datePublished: string
+  url?: string // New field for blog post redirect URL
 }
 
 export interface ContactInfo {
