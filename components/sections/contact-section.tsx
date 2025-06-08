@@ -81,19 +81,19 @@ export function ContactSection() {
     {
       icon: Mail,
       title: "Email",
-      value: contactInfo?.email || "support@gamedevelopedia.com",
+      value: contactInfo?.email || "gamedevlopedia@gmail.com",
       description: "Send us an email anytime",
     },
     {
       icon: Phone,
       title: "Phone",
-      value: "+1 (555) 123-4567",
+      value: "+91 9766414494",
       description: "Mon-Fri from 9am to 6pm",
     },
     {
       icon: MapPin,
       title: "Office",
-      value: "San Francisco, CA",
+      value: "Pune, Maharashtra",
       description: "Remote-first company",
     },
   ]
